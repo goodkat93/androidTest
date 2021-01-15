@@ -78,7 +78,7 @@ public class Main {
         Integer.parseInt(itemsCountReallyExist);
         System.out.println(itemsCountReallyExist);
 
-        Assert.assertEquals(itemsCountShouldExist, itemsCountReallyExist);
+        Assert.assertEquals(itemsCountReallyExist, itemsCountShouldExist);
 
 
 //        MobileElement el3 = driver.findElementByXPath

@@ -1,4 +1,5 @@
 package com.company.helpers;
+
 import com.google.common.base.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,7 +32,6 @@ public interface StableElementSearch {
     default WebElement searchElementByXpath(String xPath) {
         return explicitSearch(visibilityOfElementLocated(By.xpath(xPath)));
     }
-
 
     default List<WebElement> searchElementsByCss(By locator) {
         searchElementByCss(locator);
